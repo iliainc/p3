@@ -13,7 +13,6 @@ This project allows users, such as developers, to generate a random user with th
 No login required.
 
 ## Outside code
-* Basic Website Structure: http://p1.ilyanossov.me
-* Code from xkcd generator: http://p2.ilyanossov.me
+* Bootstrap: http://getbootstrap.com/
 * Random user data generator: https://packagist.org/packages/fzaninotto/faker
 * Lorem Ipsum generator: https://packagist.org/packages/badcow/lorem-ipsum
