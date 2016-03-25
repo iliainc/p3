@@ -20,6 +20,10 @@ class RandomUserController extends Controller
 
         ]);
 
+        $data = $request->all();
+
+
+
         // return \Faker\Name::name();
         // return \Faker\Internet::freeEmail($name = null);
         // return \Faker\PhoneNumber::phoneNumber();
@@ -27,7 +31,7 @@ class RandomUserController extends Controller
         // return \Faker\Address::city();
         // return \Faker\Address::address();
         // return \Faker\Address::streetName();
-         return \Faker\Address::streetAddress($includeSecondary = false);
+        // return \Faker\Address::streetAddress($includeSecondary = false);
         // return \Faker\Address::city();
         // return \Faker\Address::state();
         // return \Faker\Address::stateAbbr();
@@ -36,5 +40,7 @@ class RandomUserController extends Controller
         // return \Faker\Address::postcode();
         // return \Faker\Address::cityStateZip();
         // return \Faker\Address::country();
+
+        return view('randomuser.postindex')->with(['data'=>$data]);
     }
 }

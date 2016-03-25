@@ -20,10 +20,16 @@ class LoremIpsumController extends Controller
             'paragraphs'=>'required|numeric'
         ]);
 
+        $data = $request->all();
+
         $gen = new Generator;
 
-        $textLoremIpsum = implode("<br><br>",$gen->getParagraphs($request->paragraphs));
+        // $textLoremIpsum = implode("<br><br>",$gen->getParagraphs($request->paragraphs));
+        $textLoremIpsum = implode("<br><br>",$gen->getParagraphs($data['paragraphs']));
 
-        return $textLoremIpsum;
+        // return $textLoremIpsum;
+         return view('loremipsum.postindex')->with(['data'=>$data]);
+        //return view('loremipsum.postindex', compact('textLoremIpsum'));
+
     }
 }
