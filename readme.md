@@ -14,5 +14,5 @@ No login required.
 
 ## Outside code
 * Bootstrap: http://getbootstrap.com/
-* Random user data generator: https://packagist.org/packages/fzaninotto/faker
+* Random user data generator: https://packagist.org/packages/bobthecow/faker
 * Lorem Ipsum generator: https://packagist.org/packages/badcow/lorem-ipsum

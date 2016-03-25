@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+
 class RandomUserController extends Controller
 {
     public function getIndex()
@@ -19,6 +20,11 @@ class RandomUserController extends Controller
 
         ]);
 
-        return 'Generating Random User!';
+        // $faker = Faker\Factory::create();
+         return \Faker\Name::name();
+
+        //return $faker->name;
+
+        // return 'Generating Random User!';
     }
 }

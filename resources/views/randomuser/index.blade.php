@@ -22,7 +22,7 @@
             </ul>
         @endif
 
-    	<form method="POST" action="/" accept-charset="UTF-8">
+    	<form method="POST">
     		<label for="users">How many users?</label>		<input maxlength="2" name="users" type="text" value="{{old('paragraphs')}}" id="users"> (Max: 99)
     		<br>
 
