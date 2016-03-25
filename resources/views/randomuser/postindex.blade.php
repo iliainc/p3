@@ -14,10 +14,17 @@
 
     	<h1>Random Users</h1>
 
-    	@foreach($data as $fakeuser)
-        {
-                
-        }
+        {{\Faker\Name::name()}}
+
+        @if(count($data) > 0)
+            @foreach($data as $dat)
+                <h3>{{ $dat }}</h3>
+                ${{ \Faker\Name::name() }}<br>
+            @endforeach
+        @else
+                No Rates
+        @endif
+
 
     </div>
 @stop

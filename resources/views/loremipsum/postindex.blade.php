@@ -12,11 +12,9 @@
 
     	<a href='/'>&larr; Home</a>
 
-    	<h1>Random Lorem Ipsum</h1>
+    	<h1>Random Lorem Ipsum Text</h1>
 
-    	<p>
-            echo $textLoremIpsum;
-        </p>
+        {{ $textLoremIpsum }}<br>
 
     </div>
 @stop

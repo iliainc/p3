@@ -26,11 +26,10 @@
     		<label for="users">How many users?</label>		<input maxlength="2" name="users" type="text" value="{{old('paragraphs')}}" id="users"> (Max: 99)
     		<br>
 
-    		Include...
+    		Include?
     		<br>
-    		<input name="birthdate" type="checkbox">		<label for="birthdate">Birthdate</label>		<br>
 
-    		<input name="profile" type="checkbox">		<label for="profile">Profile</label>		<br>
+    		<input name="email" id="email" type="checkbox">		<label for="email">Email</label>		<br>
 
     		<input name="_token" type="hidden" value="{{csrf_token()}}">
     		<input type="submit" value="Generate Random User Info">

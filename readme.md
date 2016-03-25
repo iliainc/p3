@@ -16,3 +16,5 @@ No login required.
 * Bootstrap: http://getbootstrap.com/
 * Random user data generator: https://packagist.org/packages/bobthecow/faker
 * Lorem Ipsum generator: https://packagist.org/packages/badcow/lorem-ipsum
+* Ideas for passing data from controller to view: https://github.com/susanBuck/shipper
+* General forms structure: http://p3.dwa15.com

@@ -21,7 +21,10 @@ class RandomUserController extends Controller
         ]);
 
         $data = $request->all();
+        // dd($data);
 
+        // $data->getUsers();
+        // dd($data->getUsers());
 
 
         // return \Faker\Name::name();
@@ -41,6 +44,6 @@ class RandomUserController extends Controller
         // return \Faker\Address::cityStateZip();
         // return \Faker\Address::country();
 
-        return view('randomuser.postindex')->with(['data'=>$data]);
+      return view('randomuser.postindex')->with(['data'=>$data]);
     }
 }
