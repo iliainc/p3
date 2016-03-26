@@ -17,7 +17,7 @@ class LoremIpsumController extends Controller
     public function postIndex(Request $request)
     {
         $this->validate($request, [
-            'paragraphs'=>'required|numeric'
+            'paragraphs'=>'required|numeric|min:1'
         ]);
 
         $data = $request->all();
@@ -29,6 +29,7 @@ class LoremIpsumController extends Controller
         if(!$textLoremIpsum) {
             dd("Error generating LoremIpsum text");
         }
+
          return view('loremipsum.postindex')->with(['textLoremIpsum'=>$textLoremIpsum]);
     }
 }

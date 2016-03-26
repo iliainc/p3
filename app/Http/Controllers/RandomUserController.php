@@ -16,7 +16,7 @@ class RandomUserController extends Controller
     public function postIndex(Request $request)
     {
         $this->validate($request, [
-            'users'=>'required|numeric'
+            'users'=>'required|numeric|min:1'
         ]);
 
         $data = $request->all();
