@@ -25,11 +25,13 @@ class LoremIpsumController extends Controller
         $gen = new Generator;
 
         // Create string from generated paragraphs array, separating each paragraph with <br><br>
-        $textLoremIpsum = implode("<br><br>",$gen->getParagraphs($data['paragraphs']));
+        // $textLoremIpsum = implode("<br><br>",$gen->getParagraphs($data['paragraphs']));
+        $textLoremIpsum2 = $gen->getParagraphs($data['paragraphs']);
 
-        if(!$textLoremIpsum) {
+        if(!$textLoremIpsum2) {
             dd("Error generating LoremIpsum text");
         }
-         return view('loremipsum.postindex')->with(['textLoremIpsum'=>$textLoremIpsum]);
+        // return view('loremipsum.postindex')->with(['textLoremIpsum'=>$textLoremIpsum]);
+         return view('loremipsum.postindex')->with(['textLoremIpsum2'=>$textLoremIpsum2]);
     }
 }

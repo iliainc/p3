@@ -14,12 +14,7 @@
 
     	<h1>Random Users</h1>
 
-        {{\Faker\Name::name()}}<br>
-
-        {{$data['users']}}<br><br>
-        {{$data['email']}}<br>
-
-        @for ($x = 0; $x <= $data['users']; $x++)
+        @for ($x = 0; $x < $data['users']; $x++)
 
             @if(isset($data['email']))
                     {{ \Faker\Name::name() }}<br>
@@ -28,9 +23,6 @@
                     {{\Faker\Name::name()}}<br>
             @endif
         @endfor
-
-
-
 
     </div>
 @stop

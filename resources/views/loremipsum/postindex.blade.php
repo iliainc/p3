@@ -14,7 +14,11 @@
 
     	<h1>Random Lorem Ipsum Text</h1>
 
-        {{ $textLoremIpsum }}<br>
+
+
+        @foreach ($textLoremIpsum2 as $value)
+          {{ $value }}<br><br>
+        @endforeach
 
     </div>
 @stop
