@@ -21,17 +21,15 @@
 
         @for ($x = 0; $x <= $data['users']; $x++)
 
-            @if(isset($var)))
-                @foreach($data as $dat)
+            @if(isset($data['email']))
                     {{ \Faker\Name::name() }}<br>
-                    {{\Faker\Name::email()}}<br>
-                @endforeach
+                    {{ \Faker\Internet::freeEmail($name = null) }}<br>
             @else
                     {{\Faker\Name::name()}}<br>
             @endif
         @endfor
 
-    
+
 
 
     </div>
