@@ -14,22 +14,11 @@
 
     	<h1>User Generator</h1>
 
-        @if(count($errors) > 0)
-            <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-            </ul>
-        @endif
-
     	<form method="POST">
-    		<label for="users">How many users?</label>		<input maxlength="2" name="users" type="text" value="{{old('paragraphs')}}" id="users"> (Max: 99)
+    		<label for="users">How many users?</label>		<input maxlength="2" name="users" type="text" value="{{old('users')}}" id="users"> (Max: 99)
     		<br>
 
-    		Include?
-    		<br>
-
-    		<input name="email" id="email" type="checkbox">		<label for="email">Email</label>		<br>
+    		<input name="email" id="email" type="checkbox">		<label for="email">Include Email?</label>		<br>
 
     		<input name="_token" type="hidden" value="{{csrf_token()}}">
     		<input type="submit" value="Generate Random User Info">

@@ -17,10 +17,10 @@
         @for ($x = 0; $x < $data['users']; $x++)
 
             @if(isset($data['email']))
-                    {{ \Faker\Name::name() }}<br>
-                    {{ \Faker\Internet::freeEmail($name = null) }}<br>
+                    Name: &nbsp;{{ \Faker\Name::name() }} <br>Email:&nbsp;
+                    {{ \Faker\Internet::freeEmail($name = null) }} <br><br>
             @else
-                    {{\Faker\Name::name()}}<br>
+                    {{\Faker\Name::name()}} <br>
             @endif
         @endfor
 
