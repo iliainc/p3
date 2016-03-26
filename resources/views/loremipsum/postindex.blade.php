@@ -13,10 +13,8 @@
     	<a href='/'>&larr; Home</a>
 
     	<h1>Random Lorem Ipsum Text</h1>
-
-
-
-        @foreach ($textLoremIpsum2 as $value)
+        
+        @foreach ($textLoremIpsum as $value)
           {{ $value }}<br><br>
         @endforeach
 
