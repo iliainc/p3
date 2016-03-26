@@ -23,9 +23,9 @@ class RandomUserController extends Controller
         $data = $request->all();
         // dd($data);
 
-        // $data->getUsers();
-        // dd($data->getUsers());
-
+        // {{\Faker\Name::name()}}<br>
+        // {{$data['users']}}<br>
+        // {{$data['email']}}<br>
 
         // return \Faker\Name::name();
         // return \Faker\Internet::freeEmail($name = null);

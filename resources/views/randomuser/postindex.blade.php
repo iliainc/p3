@@ -14,16 +14,24 @@
 
     	<h1>Random Users</h1>
 
-        {{\Faker\Name::name()}}
+        {{\Faker\Name::name()}}<br>
 
-        @if(count($data) > 0)
-            @foreach($data as $dat)
-                <h3>{{ $dat }}</h3>
-                ${{ \Faker\Name::name() }}<br>
-            @endforeach
-        @else
-                No Rates
-        @endif
+        {{$data['users']}}<br><br>
+        {{$data['email']}}<br>
+
+        @for ($x = 0; $x <= $data['users']; $x++)
+
+            @if(isset($var)))
+                @foreach($data as $dat)
+                    {{ \Faker\Name::name() }}<br>
+                    {{\Faker\Name::email()}}<br>
+                @endforeach
+            @else
+                    {{\Faker\Name::name()}}<br>
+            @endif
+        @endfor
+
+    
 
 
     </div>
