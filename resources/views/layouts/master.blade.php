@@ -18,6 +18,13 @@
 
     </header>
 
+    <h1 class="welcome">Developer's Best Friend</h1>
+
+    <img
+    src='images/devbestfriend.jpg'
+    style='width:300px'
+    alt='Dev Best Friend'>
+
     <section>
         @yield('content')
     </section>

@@ -10,10 +10,10 @@
 @section('content')
     <div class='container'>
 
-    	<a href='/'>&larr; Home</a>
+    	<a href='/loremipsum'>&larr; Back</a>
 
     	<h1>Random Lorem Ipsum Text</h1>
-        
+
         @foreach ($textLoremIpsum as $value)
           {{ $value }}<br><br>
         @endforeach

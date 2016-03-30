@@ -10,7 +10,7 @@
 @section('content')
     <div class='container'>
 
-    	<a href='/'>&larr; Home</a>
+    	<a href='/randomuser'>&larr; Back</a>
 
     	<h1>Random Users</h1>
 

@@ -41,3 +41,12 @@ img {
 	left:56%;
 	overflow:hidden;
 }
+
+section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
