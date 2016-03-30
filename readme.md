@@ -7,7 +7,7 @@
 This project allows users, such as developers, to generate a random user with the specified, as well as random lorem ipsum text.
 
 ## Demo
-<https://youtu.be/TODO>
+<https://youtu.be/ogaIxqSV59Y>
 
 ## Details for teaching team
 No login required.
